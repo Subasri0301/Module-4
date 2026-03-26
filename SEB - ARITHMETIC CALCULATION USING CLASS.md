@@ -1,4 +1,4 @@
-# Exp.No:20  
+# Exp.No:4E
 ## SEB - ARITHMETIC CALCULATION USING CLASS
 
 ---
@@ -37,9 +37,46 @@ To write a Python program to perform addition and division operations using a cl
 ```
 
 
+class calc():
+    def setvalues(self,a,b):
+        self.a = a
+        self.b = b
+        
+    def add(self):
+        self.a + self.b
+        
+    def mul(self):
+        self.a // self.b
+        
+a = int(input())
+b = int(input())
+
+obj=a+b
+obc=a*b
+choice = 1
+
+while choice!=0:
+    choice = int(input())
+    if choice ==1:
+        print("Result: ",obj)
+        
+    elif choice == 2:
+        print("Result: ",obc)
+        
+    elif choice == 0:
+        print("Exiting!")
+        break
+    else:
+        print("Invalid choice")
+
+
+print()
+
 
 ```
 
 ### OUTPUT
+<img width="1185" height="381" alt="image" src="https://github.com/user-attachments/assets/15611bac-a8c2-425d-8445-c010a9da1eac" />
 
 ### RESULT
+Therefore, the output is the example to write a python program to perform addition and multiplication operation using class and if..elif statement note: class name should be calc, function name should be setvalues( to set a and b values) ,add and mul cases : choice 1 ->perform addition ,choice 2-> perform multiplication , choice 0 -> exiting, other choices -> print 'invalid choice'
